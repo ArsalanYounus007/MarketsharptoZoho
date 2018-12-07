@@ -7,8 +7,6 @@ import Zoho.ZohoReportClient.javadocs.com.adventnet.zoho.client.report.ReportCli
  * 
  * 
  **/
-
-
 public class Config 
 {
     static final String DATABASENAME="demoWorkspace";

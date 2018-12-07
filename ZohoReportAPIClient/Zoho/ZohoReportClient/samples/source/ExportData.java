@@ -5,7 +5,7 @@
  *$Id$
  */
 
-package com.adventnet.zoho.client.report.samples;
+package Zoho.ZohoReportClient.samples.source;
 
 import java.text.SimpleDateFormat;
 import java.util.HashMap;

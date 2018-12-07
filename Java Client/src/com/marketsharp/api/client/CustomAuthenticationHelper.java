@@ -22,9 +22,9 @@ public class CustomAuthenticationHelper extends AuthenticatorHelper {
     //This is your MarketSharp M company id.
     private static final int COMPANY_ID = 2157;
     //This is the generated user key obtained from the admin section of MarketSharp M.
-    private static final String USER_KEY = "efd1685a-1479-4893-bbe9-948640452e23";
+    private static final String USER_KEY = "3e0edb2d-d0bc-454c-9ea3-0cba019b3008";
     //This is the associated secret key obtained from the admin section of MarketSharp M.
-    private static final String SECRET_KEY = "WZnT/kXjYdvcwjZ9RetlnYleH4ds9QhsxDuhPriJilE=";
+    private static final String SECRET_KEY = "z3o9AJ/Nrc3WlrmImttr3rhBLlG1HgQsSG48IzNFrYs=";
     
     private static final String authHeaderPrefix = String.valueOf(COMPANY_ID) + ':' + USER_KEY + ':';
     private static final String hashMessagePrefix = String.valueOf(COMPANY_ID) + USER_KEY;

@@ -18,7 +18,7 @@ import org.restlet.engine.util.Base64;
 import org.restlet.ext.odata.Query;
 import org.restlet.util.Series;
 import Zoho.ZohoReportClient.samples.source.AddRow;
-
+import Zoho.ZohoReportClient.samples.source.DeleteData;
 
 
 public class MarketSharpClient {
@@ -31,23 +31,28 @@ public class MarketSharpClient {
         MarketSharpCrmApiService service = new MarketSharpCrmApiService();
         service.setCredentials(new ChallengeResponse(ChallengeScheme.CUSTOM));
         try {
-            //testLeadPaintAttachment(service);
-            testAppointmentQuery(service);
+        	DeleteData del = new DeleteData();
+        	del.deleteData();} catch (Exception ex) {
+                Logger.getLogger(MarketSharpClient.class.getName()).log(Level.SEVERE, null, ex);
+            }
+          try {
+        	  //testLeadPaintAttachment(service);
+       testAppointmentQuery(service);
             //testAppointmentQuery2(service);
             //testJob(service);
-            testContact(service);
+      testContact(service);
             //testContact2(service);
             //testContactType(service);
-            testProductType(service);
+   testProductType(service);
             //testProductDetail(service);
             //testInquirySourcePrimary(service);
-            //testInquirySourceSecondary(service);
+           // testInquirySourceSecondary(service);
             //testNoteQuery(service);
             
             testService(service);
-        } catch (Exception ex) {
-            Logger.getLogger(MarketSharpClient.class.getName()).log(Level.SEVERE, null, ex);
-        }
+          } catch (Exception ex) {
+              Logger.getLogger(MarketSharpClient.class.getName()).log(Level.SEVERE, null, ex);
+          }
     }
     
     private static void testLeadPaintAttachment(MarketSharpCrmApiService service)
